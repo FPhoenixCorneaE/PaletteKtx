@@ -1,5 +1,30 @@
-PaletteKtx
-=======
+# PaletteKtx
+
+[![](https://jitpack.io/v/FPhoenixCorneaE/PaletteKtx.svg)](https://jitpack.io/#FPhoenixCorneaE/PaletteKtx)
+
+<div align="center">
+    <img src="https://github.com/FPhoenixCorneaE/PaletteKtx/blob/main/screenshot/preview_palette_1.webp" width="320" align="top"/>
+	<img src="https://github.com/FPhoenixCorneaE/PaletteKtx/blob/main/screenshot/preview_palette_2.webp" width="320" align="top" style="margin-left:15px"/>
+</div>
+
+### How to include it in your project:
+**Step 1.** Add the JitPack repository to your build file
+
+```kotlin
+allprojects {
+	repositories {
+		maven("https://jitpack.io")
+	}
+}
+```
+
+**Step 2.** Add the dependency
+
+```kotlin
+dependencies {
+	implementation("com.github.FPhoenixCorneaE:PaletteKtx:$latest")
+}
+```
 
 ### Glide Sample
 
