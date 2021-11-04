@@ -195,18 +195,11 @@ open class PaletteKtx {
 
         private const val TAG = "BitmapPalette"
 
-        /** 单例 */
-        @Volatile
-        private var sInstance: PaletteKtx? = null
-
         /** 缓存 */
         private val CACHE = LruCache<Any, Palette?>(40)
 
-        @Synchronized
         fun getInstance(): PaletteKtx {
-            return sInstance ?: synchronized(this) {
-                sInstance ?: PaletteKtx().also { sInstance = it }
-            }
+            return PaletteKtx()
         }
 
         /**
@@ -214,7 +207,6 @@ open class PaletteKtx {
          */
         fun clear() {
             CACHE.evictAll()
-            sInstance = null
         }
     }
 }

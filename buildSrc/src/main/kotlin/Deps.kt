@@ -3,8 +3,8 @@ object Deps {
     const val buildToolsVersion = "30.0.3"
     const val minSdkVersion = 16
     const val targetSdkVersion = 30
-    const val versionCode = 100
-    const val versionName = "1.0.0"
+    const val versionCode = 101
+    const val versionName = "1.0.1"
 
     object AndroidX {
         const val appcompat = "androidx.appcompat:appcompat:1.3.1"
